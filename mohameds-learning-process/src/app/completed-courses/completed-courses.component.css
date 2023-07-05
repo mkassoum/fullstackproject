@@ -1,35 +1,49 @@
-#main-div {
-margin-bottom: 20px;
+.completed-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color: rgb(210, 233, 233);
+  margin-bottom: 4px;
 }
-.subject-button {
-    position: absolute;
-    top: 10vh;
-    right: 40vw;
-    background-color: #00BFBF; /* Darker cyan color */
-        color: #FFFFFF; /* White text color */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
-    
-  }
-  
-  @keyframes coolAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1);
-      }
-      100% {
-        opacity: 0;
-        transform: scale(0.5);
-      }
-  }
+.completed-courses:hover{
+  background-color: rgb(179, 230, 230);
+}
 
-  
-  
+.subject-item {
+  background-color: darkcyan;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button-container button {
+  background-color: cyan;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.add-subject-button {
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-subject-button:hover {
+  background-color: #008b8b; /* Darker shade of darkcyan */
+}
+
