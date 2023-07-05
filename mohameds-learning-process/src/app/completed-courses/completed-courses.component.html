@@ -1,8 +1,8 @@
 <div style="margin-bottom: 25vh;">
     <h1>Completed Courses</h1>
-    <button class="subject-button" (click)="openAddSubjectPopup()">Add Subject</button>
+    <button class="add-subject-button" (click)="openAddSubjectPopup()">Add Subject</button>
     <div *ngFor="let subject of subjects">
-      <div class="subject-item">
+      <div class="completed-courses">
         <h3>{{ subject.name }}</h3>
         <p>{{ subject.description }}</p>
         <p>Note: {{ subject.note }}</p>
