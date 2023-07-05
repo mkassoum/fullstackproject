@@ -1,3 +1,35 @@
 #main-div {
 margin-bottom: 20px;
 }
+.subject-button {
+    position: absolute;
+    top: 10vh;
+    right: 40vw;
+    background-color: #00BFBF; /* Darker cyan color */
+        color: #FFFFFF; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    
+  }
+  
+  @keyframes coolAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+  }
+
+  
+  

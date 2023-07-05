@@ -1,0 +1,20 @@
+
+
+<form (submit)="saveSubject()">
+  <div>
+    <label for="name"></label>
+    <input type="text" id="name" placeholder="{{ subjectName }}" name="name" [(ngModel)]="subjectName" required>
+  </div>
+  <div>
+    <label for="description"></label>
+    <textarea id="description" placeholder="{{ subjectDescription }}" name="description" [(ngModel)]="subjectDescription"></textarea>
+  </div>
+  <div>
+    <label for="note"></label>
+    <textarea id="note" placeholder="{{ subjectNote }}" name="note" [(ngModel)]="subjectNote"></textarea>
+  </div>
+  <div>
+    <button type="submit">Save</button>
+    <button type="button" (click)="cancel()">Cancel</button>
+  </div>
+</form>
