@@ -15,6 +15,10 @@ Follow the steps below to get the project up and running on your local machine:
 
 git clone https://github.com/mkassoum/fullstackproject.git
 
+2. add your Mongodb connection string in the application.properties
+   and create a database named subjects
+  mohameds-learning-process/api/src/main/resources/application.properties
+
 2. Frontend Setup:
 
 Navigate to the frontend directory:
