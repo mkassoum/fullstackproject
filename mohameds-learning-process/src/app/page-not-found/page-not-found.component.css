@@ -1,0 +1,26 @@
+p{
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    margin: 5px;
+    padding: 5px;
+    display: inline;
+    background-color:  rgb(66, 10, 22);
+    position: fixed;
+    left: 34vw;
+    top: 7vh;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px;
+    animation: fadeOut 5s linear forwards;
+    
+
+}
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+}
