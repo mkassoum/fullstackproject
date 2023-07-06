@@ -19,7 +19,6 @@ export class EditSubjectPopupComponent {
     private apiService: ApiService,
     @Inject(MAT_DIALOG_DATA) public data: { subject: any }
   ) {
-    // Retrieve the subject data from the MAT_DIALOG_DATA injection
     const { subject } = this.data;
     this.subjectId = subject.id;
     this.subjectName = subject.name;
@@ -29,7 +28,6 @@ export class EditSubjectPopupComponent {
   }
 
   saveSubject() {
-    // Create a new subject object using the form values
     const updatedSubject = {
       id: this.subjectId,
       name: this.subjectName,
@@ -38,22 +36,18 @@ export class EditSubjectPopupComponent {
       note: this.subjectNote
     };
 
-    // Call the API service to update the subject
     this.apiService.updateSubjectById(this.subjectId, updatedSubject).subscribe(
       (response) => {
-        // Subject updated successfully, close the dialog and pass the updated subject as the result
         this.dialogRef.close(response);
       },
       (error) => {
         console.error(error);
-        // Handle error if needed
       }
     );
     window.location.reload()
   }
 
   cancel() {
-    // Close the dialog without saving changes
     this.dialogRef.close();
   }
 }
