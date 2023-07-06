@@ -21,29 +21,24 @@ export class AddSubjectPopupComponent implements OnInit {
   }
 
   addSubject() {
-    // Create a new subject object using the form values
     const newSubject = {
       name: this.subjectName,
       description: this.subjectDescription,
       note: this.subjectNote
     };
 
-    // Call the API service to add the subject
     this.apiService.createSubject(newSubject).subscribe(
       (response) => {
-        // Subject added successfully, close the dialog
         this.dialogRef.close(response);
       },
       (error) => {
         console.error(error);
-        // Handle error if needed
       }
     );
     window.location.reload()
   }
 
   cancel() {
-    // Close the dialog without adding the subject
     this.dialogRef.close();
   }
 }
