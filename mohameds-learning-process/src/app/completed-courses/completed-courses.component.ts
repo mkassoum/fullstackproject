@@ -20,7 +20,6 @@ export class CompletedCoursesComponent implements OnInit {
     });
   
     dialogRef.afterClosed().subscribe((result) => {
-      // Handle the result here, such as refreshing the subject list
     });
   }
 
@@ -31,7 +30,6 @@ export class CompletedCoursesComponent implements OnInit {
     });
   
     dialogRef.afterClosed().subscribe((result) => {
-      // Handle the result here, such as refreshing the subject list
     });
   }
 
